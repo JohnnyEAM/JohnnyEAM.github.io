@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>       
+    <body>
+        <!-- START OF NAVIGATION BAR -->
+        <div class="header">
+            <div class="navbar">
+                <img src="UWLLogo.png"alt="UWL logo"class="image1">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Journals
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="information-databases.html">Information Systems and Databases</a>
+                        <a href="digital-identity.html">Developing a Digital Identity</a>
+                        <a href="management-business.html">Introduction to Business Management</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <main>
+        <!-- START OF CV PAGE -->
+            <div class="cv-main">
+            <h2>My Curriculum Vitae Document</h2>
+            <br>
+            <!-- START OF CV TABLE -->
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>Johnny El-Ammar</td>
+                </tr>
+                
+
+                <tr>
+                    <th>Email:</th>
+                    <td>Johnnyelammar@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <th>Personal Profile:</th>
+                    <td>I am a motivated and disciplined student who is looking for a part time job in order to gain more 
+                        experience in the real world environment of work and to broaden my skill set, 
+                        I am a consistent and disciplined young man who can learn very efficiently and carry out 
+                        tasks to the best of my ability without hesitation. I have experience in a fast paced working
+                        environment and can respond well to criticism, work well under pressure as well as be a functioning
+                        member in a team of workers.</td>
+                </tr>
+                
+                <tr>
+                    <th>Qualifications:</th>
+                    <td>
+                        <ol>
+                        <li>GCSE qualifications, Finchley Catholic High School<br></li>
+                        <li>A level Qualifications, Finchley Catholic High School<br></li>
+                        <li>Distinction in IT Level 3 BTEC<br></li>
+                        <li>B in Psychology<br></li>
+                        <li>B in Business Studies<br></li>
+                        <li>Currently Studying Information Technology Management for Business at University Of West London</li>
+                        </ol>
+                    </td>
+                </tr>    
+                
+                <tr>
+                    <th>Work History:</th>
+                    <td>Waiter, the Gate Barnet Rd, Barnet EN5 3LA<br>
+                        <br>
+                    <ul>
+                       <li> Worked for 7 weeks during the summer of 2021</li>
+                       <li> Collected customer orders and inputted using cashier</li>
+                       <li> Processed EPOS transactions and cash payments along with receipts</li>
+                       <li> Worked with customer service to resolve customer issues </li>
+                        <br>
+                        Customer Assistant, Marks and Spencers PLC<br>
+                        <br>
+                        <li> Currently working </li>
+                        <li> Ability to work under pressure and meet deadlines</li>
+                        <li> Improvise and provide excellent customer service</li>
+                        <li> Trustworthy, Worked night shifts without the supervision of a manager</li>
+                    </ul>
+                    </td>
+                </tr>
+                
+            </table> 
+            <!-- END OF CV TABLE -->
+        </div> 
+            <hr>
+            <!-- CONTACT FORM -->
+             <!-- javascript input validation from w3schools -->
+             <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                        if (x == "") {
+                            alert("Name must be filled out");
+                            return false;
+                        }
+                    let y = document.forms["myForm"]["email"].value;
+                        if (y == "") {
+                            alert("Email must be filled out");
+                            return false;
+                        }
+                    let z = document.forms["myForm"]["subject"].value;
+                        if (z == "") {
+                            alert("Subject must be filled out");
+                            return false;
+                        }    
+                    }
+                    
+                
+            </script>
+                <h1>Contact Us</h1>
+                <div class="form-cv-div">
+
+                    <div class="form-cv">
+                        <form name="myForm" action="#" onsubmit="validateForm()"method="post">
+                    
+                        <label for="fname"class="fname1">Name:</label>
+                        <input type="text" id="fname" class="fname2" name="firstname" placeholder="Your name..">
+                            
+                        <label for="email"class="email1">Email:</label>
+                        <input type="text" id="email"class="email2" name="email" placeholder="Your Email..">
+            
+                        <label for="subject"class="subject1">Subject:</label>
+                        <textarea type="text" id="subject"class="subject2" name="subject" placeholder="Your Subject.."></textarea>
+                        
+                        <button type="submit" value="submit"class="submit">Submit</button>
+                        <button type="reset" value="#"class="reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- END OF CONTACT FORM -->
+                
+                <!-- START OF JAVA SCRIPT PLACEHOLDER -->
+                <div onclick="scrollToTop() "class="scrolltop">Top</div>
+                <script>
+                    function scrollToTop(){
+                    window.scrollTo(0, 0);
+                    }
+                </script>
+                <!-- END OF JAVASCIPT PLACEHOLDER -->
+                <!-- START OF FOOTER -->
+                <div class="foot-box">
+                    <div class = "footer"> 
+                        <img src="UWLLogo.png"alt="UWL logo"class="image2">
+                            <div class="foottext"> 
+                                <p>Johnny El-Ammar<br>ID: 21533688<br>Email: 21533688@student.uwl.ac.uk</p>
+                            </div> 
+                    </div>
+                </div>
+                <!-- END OF FOOTER -->
+            </main>
+            </body>
+        </html>

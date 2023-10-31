@@ -1,0 +1,435 @@
+ /* * { 
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }      */
+/* GENERAL CSS */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main{
+  margin-top: 100px;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/* END OF GENERAL CSS */
+
+
+
+/* NAVBAR SECTION CSS */
+.header{
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width:100%;
+  position: fixed;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  background-color: red;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: white;       
+  text-align:left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;    
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;      
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropdown-content {
+  display: none;      
+  position: absolute;
+  background: red;
+  max-width: 2000px;
+  box-shadow: 10px 10px 10px 10px;
+
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 5px 40px;  
+  display: block;
+  text-align:left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;       
+}
+
+.navbar a::after{
+  content: '';
+  width: 0%;
+  height:2px;
+  background:white;
+  display: block;
+  margin: auto;
+}                         
+.navbar a:hover::after{
+  width:100%;
+  transition:0.5s;
+}
+.image1{
+  max-width: 80px;
+  max-height: 60px;
+  border-radius:  20px; ; 
+  float:right;   
+}
+/* END OF NAVBAR CSS */
+
+
+
+/* FOOTER SECTION CSS */
+.image2{
+  max-width: 100x;
+  max-height: 80px;
+  border-radius:  20px; ; 
+  float:left; 
+ }
+ .foot-box{
+  display: flex;
+  justify-content: end;
+ }
+.footer{
+  min-height: 12vh;
+  width: 100%;   
+  background: red;
+  position: relative;
+    
+  }
+.foottext{
+  width: 90%;
+  color:black;
+  position: absolute;    
+  transform: translate(5%,10%);
+  text-align: center;
+  font-size: 13px;
+}
+/*END OF FOOTER  */
+
+
+
+/* START OF INDEX BODY*/
+.text-box{
+  width: 100%;
+  color:#fff;
+  position: relative;
+}
+.text-box h1{
+  font-size: 50px;
+  font-family: Arial;   
+  color: black;
+  text-align: center   
+}
+.text-box p{
+  font-size: 14px;
+  color:black;         
+  font-family: Arial;
+  text-align: center;
+}
+.text-image {
+  display: flex;
+  justify-content: center;
+}
+.image3{
+  max-width:500px;
+  max-height:260px;  
+}
+/* END OF INDEX BODY */
+
+
+
+/* CONTACT FORM  */
+.form-cv-div {
+  display: flex;
+  justify-content: center;
+}
+
+  
+.form_cv{
+  left:30%;
+  color:black;
+  display: block;
+  width:20%;
+  padding-bottom: 20px;
+}
+h1{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: Arial;
+    
+}
+  
+.fname2{
+  width: 13%;
+  color:black;
+  position: relative;   
+  text-align: center;
+  min-height: 5vh;
+  width: 100%;
+  font-family: Arial;
+}
+
+  
+.email2{
+  width: 13%;
+  color:black;
+  position: relative;   
+  text-align: center;
+  min-height: 5vh;
+  width: 100%;
+  font-family: Arial;
+}
+  
+.subject2{
+  width: 13%;
+  color:black;
+  position: relative;   
+  text-align: center;
+  min-height: 20vh;
+  width: 100%;
+  resize: vertical;
+  font-family: Arial;
+}
+
+.submit{
+  background-color: green;
+  border: green solid 2px;
+  padding:10px;
+  float: left;
+
+}
+.reset{
+  background-color: #f44336;
+  border: red solid 2px;
+  padding: 10px;
+  float: right;
+}
+.submit:hover{
+  cursor: pointer;
+  padding:20px;
+}
+.reset:hover{
+  cursor: pointer;
+  padding:20px;
+
+}
+/* END OF CONTACT FORM */
+
+
+
+/* CV TABLE/PAGE CSS */
+table, th, td {
+  border: 3px solid white;
+  border-collapse: collapse;  
+  }
+.cv-main{
+  background-color: whitesmoke;
+  width:50%;
+  position: relative;
+  left:25%;
+  text-align: center;
+
+}
+.break{
+  padding:20px;
+}
+
+.contact-container-cv, h1{
+  text-align: center; 
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  color:black;
+}
+  
+.cv-main h2{
+  padding-top: 22px;
+  color:black;
+  font-size: 35px;
+  font-family: Arial;        /*Formatting CV page header(h2)*/
+}
+/* END OF CV TABLE/PAGE CSS */
+
+
+
+/* CONTACT PAGE CSS */
+.contact-intro-box{
+  background-color: whitesmoke;
+  width:40%;
+  position: absolute;
+  top:30%;
+  left:20%;  
+}
+.form-cv-div-contact{
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+  padding-bottom:47px;
+
+}
+.form_cv h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: center;
+  
+}
+.contact-main{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.contact-main img{
+  max-width: 50%;
+  max-height: 50;
+}
+/* END OF CONTACT PAGE CSS */
+
+
+/* JOURNAL PAGES CSS */
+.database-text-main{
+  display: flex;
+  justify-content: center;
+  
+}
+.database-text-main h1{
+  font-size:30px;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  
+}
+.journal-drop{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: top;
+  
+}
+
+.details-journal{
+  width: 50%;
+  min-width: 300px;
+}
+.journal-image{
+  width: 50%;
+  min-width: 300px;
+}
+
+.journal-image img {
+  width: 100%;
+}
+summary {
+list-style-type: '';
+margin:0.1%;
+background-color: whitesmoke;
+border: 1px black solid;
+width: 100%;
+
+}
+.journal-name{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 1px;
+}
+
+summary h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+/* END OF JOURNAL PAGES CSS */
+
+/* ABOUT PAGE */ 
+.image-box{
+  display: flex;
+  justify-content: center;
+  
+
+}
+.map-embed{
+  display: flex;
+  justify-content: center;
+}
+.map h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.image-box h1{
+  padding:20px;
+} 
+.image-me{
+  max-height: 160px;
+  position: relative;
+  width:20%;
+ 
+}
+.about-text-box{
+  display: flex;
+  justify-content: center;
+}
+.about-text, p{
+  font-family: Arial;
+  font-size:13px;
+  text-align: center;
+  
+}
+.about-text{
+  border:#f44336 3px solid;
+}
+.about-img{
+  max-width: 100px;
+}
+/* END OF ABOUT PAGE */
+
+/* PLACEHOLDER/ TO TOP BUTTON */
+.scrolltop{
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  position: fixed;
+  bottom:90px;
+  right: 30px;
+  padding:10px 15px;
+  background-color: black;
+  color:white;
+  border-radius:5px;
+  border-radius: 1px solid white;
+
+}
+.scrolltop:hover{
+  background-color: white;
+  color:black
+}
+/* END OF PLACEHOLDER */

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>       
+    <body>
+        <!-- START OF NAVIGATION BAR -->
+        <div class="header">
+            <div class="navbar">
+                <img src="UWLLogo.png"alt="UWL logo"class="image1">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Journals
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="information-databases.html">Information Systems and Databases</a>
+                        <a href="digital-identity.html">Developing a Digital Identity</a>
+                        <a href="management-business.html">Introduction to Business Management</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <main>
+            <!-- INTRO TO CONTACT PAGE -->
+            <div class="contact-intro-box">
+                <div class="contact-main">
+                    <h2>Here is my contact page!</h2>
+                    <p>Please fill out the form to the right with your name,<br> 
+                        email and subject of your request and i will<br> do my best to get back to you!</p>
+                    <img src="smiley.jpg"alt="smiley face">
+                </div>
+            </div>
+            <!-- CONTACT FORM -->
+            <!-- javascript input validation from w3schools -->
+            <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                        if (x == "") {
+                            alert("Name must be filled out");
+                            return false;
+                        }
+                    let y = document.forms["myForm"]["email"].value;
+                        if (y == "") {
+                            alert("Email must be filled out");
+                            return false;
+                        }
+                    let z = document.forms["myForm"]["subject"].value;
+                        if (z == "") {
+                            alert("Subject must be filled out");
+                            return false;
+                        }    
+                    }
+                    
+                
+            </script>
+            <div class="form-cv-div-contact">
+                <div class="form_cv">
+                    <h2>Contact Us</h2>
+                    <form name="myForm" action="#" onsubmit="validateForm()"method="post">
+                        <label for="fname"class="fname1">Name:</label>
+                        <input type="text" id="fname" class="fname2" name="firstname" placeholder="Your name..">
+                            
+                        <label for="email"class="email1">Email:</label>
+                        <input type="text" id="email"class="email2" name="email" placeholder="Your Email..">
+            
+                        <label for="subject"class="subject1">Subject:</label>
+                        <textarea type="text" id="subject"class="subject2" name="subject" placeholder="Your Subject.."></textarea>
+                        
+                        <button type="submit" value="submit"class="submit">Submit</button>
+                        <button type="reset" value="#"class="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+            <!-- END OF CONTACT FORM -->
+            <hr>
+            <!-- UNIVERSITY MAP IMPORT -->
+            <div class="map">
+                <h1>University of West London</h1>
+                <p>This is my University location!</p>
+                <div class="map-embed">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!
+                1m12!1m3!1d2483.3448734131202!2d-0.3057775245383757!3d51.50688861074224!2m3!1f0!
+                2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversity
+                %20of%20West%20London!5e0!3m2!1sen!2suk!4v1683188211023!5m2!1sen!2suk" width="600" height="450" 
+                style="border:0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            <!-- END OF CONTACT PAGE INFO -->
+            
+            <div onclick="scrollToTop() "class="scrolltop">Top</div>
+            <!-- START OF JAVA SCRIPT PLACEHOLDER -->
+            <div onclick="scrollToTop() "class="scrolltop">Top</div>
+            <script>
+                function scrollToTop(){
+                    window.scrollTo(0, 0);
+                }
+            </script>
+            <!-- END OF JAVASCIPT PLACEHOLDER -->
+            <!-- START OF FOOTER -->
+        <div class="foot-box">
+            
+            <div class = "footer"> 
+                <img src="UWLLogo.png"alt="UWL logo"class="image2">
+                    <div class="foottext"> 
+                        <p>Johnny El-Ammar<br>ID: 21533688<br>Email: 21533688@student.uwl.ac.uk</p>
+                        
+                    </div> 
+                    
+            </div>
+        </div>
+        <!-- END OF FOOTER -->
+        </main>
+        </body>
+    </html>
